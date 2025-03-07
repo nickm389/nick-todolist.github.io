@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded',function(){
 
     var task_lists = []; 
-
+    
     document.querySelector('#new-task').onsubmit = function(event){
                 
         const li = document.createElement('li'); 
@@ -19,6 +19,14 @@ document.addEventListener('DOMContentLoaded',function(){
 
         document.querySelector('#tasks-list').append(li); 
         document.querySelector('#task').value = ''; 
+
+        let new_task_list = {
+            description: task_text,
+            priority: task_priority,
+            status: task_status
+        };
+
+        task_lists.push(new_task_list); 
 
         console.log(task_lists); 
        
