@@ -1,0 +1,24 @@
+#title{
+    text-align: center;
+}
+
+#new-task{
+    text-align: center;
+}
+
+#background{
+    background-color: darkslategrey;
+} 
+
+#tasks-list{
+    text-align: center;
+    list-style-position: inside;
+}
+
+.remove{
+    text-align: center;
+}
+
+.jumbo{
+    background-color: rgb(57, 170, 170);
+}

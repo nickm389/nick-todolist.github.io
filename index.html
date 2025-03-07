@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Todolist</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+</head>
+<body id="background">
+    <div class="jumbo" class="mt-4 p-5 bg-primary text-white rounded">
+        <h1 id="title">Simple Todolist</h1>
+    </div>
+    
+    <div class="container mt-3">
+    <hr>
+    <form id="new-task">
+        <input id="task" autocomplete="off" autofocus placeholder="Type in a new task here" type="text"/>
+        <select id="priority" data-bs-toggle="tooltip" title="Click dropdown to select priority for the task">
+            <option value="high-priority"  data-answer="high-priority">High Priority</option>
+            <option value="medium-priority"data-answer="medium-priority">Medium Priority</option>
+            <option value="low-priority" data-answer="low-priority">Low Priority</option>
+        </select>
+        <button type="submit" data-bs-toggle="tooltip" title="Click to add task to the list"  class="btn btn-info">Add Task</button>
+    </form>
+    <hr>
+    <ul id="tasks-list"></ul>     
+    </div>
+</body>
+</html>
